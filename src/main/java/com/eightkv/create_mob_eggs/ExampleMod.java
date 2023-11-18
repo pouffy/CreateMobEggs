@@ -1,4 +1,4 @@
-package com.example.modid;
+package com.eightkv.create_mob_eggs;
 
 import com.simibubi.create.Create;
 
@@ -11,8 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ExampleMod implements ModInitializer {
-	public static final String ID = "modid";
-	public static final String NAME = "Example Mod";
+	public static final String ID = "create_mob_eggs";
+	public static final String NAME = "Create Mob Eggs";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
 	@Override

@@ -1,9 +1,7 @@
-package com.example.modid.mixin;
+package com.eightkv.create_mob_eggs.mixin;
 
-import com.example.modid.ExampleMod;
+import com.eightkv.create_mob_eggs.ExampleMod;
 import com.simibubi.create.content.kinetics.crusher.CrushingWheelControllerBlock;
-
-import net.minecraft.world.effect.MobEffect;
 
 import net.minecraft.world.effect.MobEffects;
 
@@ -29,9 +27,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicBoolean;
-
 @Mixin(CrushingWheelControllerBlockEntity.class)
 public class MinecraftMixin {
 
@@ -39,12 +34,10 @@ public class MinecraftMixin {
 	public Entity processingEntity;
 	@Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/Entity;setPos(DDD)V", shift = At.Shift.AFTER))
 	private void injected(CallbackInfo ci) {
-		if(!processingEntity.isAlive() && processingEntity instanceof LivingEntity){
 
+		if(!processingEntity.isAlive() && processingEntity instanceof LivingEntity){
 			boolean hasRegeneration = ((LivingEntity) processingEntity).hasEffect(MobEffects.REGENERATION);
 			boolean hasWeakness = ((LivingEntity) processingEntity).hasEffect(MobEffects.WEAKNESS);
-
-
 			boolean hasEffect = ((LivingEntity) processingEntity).getMobType() == MobType.UNDEAD ? hasWeakness : hasRegeneration;
 
 			if(hasEffect){

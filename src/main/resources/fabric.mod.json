@@ -15,7 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "com.eightkv.create_mob_eggs.ExampleMod"
     ]
   },
   "mixins": [
