@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "modid",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create Mob Eggs",
+  "description": "Makes mobs drop spawn-eggs in crushing wheels if they have certain effects. Regular mobs - regeneration, undead mobs - weakness.",
   "authors": [
-    "Me!"
+    "8KV"
   ],
   "contact": {
     "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
