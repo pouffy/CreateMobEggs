@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create_mob_eggs",
   "version": "${version}",
   "name": "Create Mob Eggs",
   "description": "Makes mobs drop spawn-eggs in crushing wheels if they have certain effects. Regular mobs - regeneration, undead mobs - weakness.",
@@ -11,15 +11,15 @@
     "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
   },
   "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/create_mob_eggs/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.eightkv.create_mob_eggs.ExampleMod"
+      "com.eightkv.create_mob_eggs.CreateMobEggs"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "create_mob_eggs.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",

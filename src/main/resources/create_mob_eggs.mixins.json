@@ -4,7 +4,7 @@
   "package": "com.eightkv.create_mob_eggs.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MinecraftMixin"
+    "CrushingWheelControllerBlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

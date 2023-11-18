@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod implements ModInitializer {
+public class CreateMobEggs implements ModInitializer {
 	public static final String ID = "create_mob_eggs";
 	public static final String NAME = "Create Mob Eggs";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
